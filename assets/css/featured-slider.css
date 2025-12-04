@@ -1,0 +1,163 @@
+.boginya-featured-products {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.boginya-slider-shell {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.boginya-slider {
+    overflow: hidden;
+    width: 100%;
+}
+
+.boginya-slider__track {
+    display: flex;
+    align-items: stretch;
+}
+
+.boginya-slide {
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+.boginya-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.boginya-card__thumb {
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.boginya-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.boginya-card__thumb img {
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
+    display: block;
+    object-fit: cover;
+}
+
+.boginya-card__title {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.boginya-card__title a {
+    color: #1d1d1f;
+    text-decoration: none;
+}
+
+.boginya-card__price {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #111827;
+}
+
+.boginya-card__cta .added_to_cart,
+.boginya-card__cta .button {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    background: #111827;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.boginya-card__cta .button:hover {
+    background: #1f2937;
+    transform: translateY(-1px);
+}
+
+.boginya-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 12px;
+    width: 100%;
+}
+
+.boginya-dots button {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    border: none;
+    background: #d1d5db;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.boginya-dots button.is-active {
+    background: #111827;
+    transform: scale(1.1);
+}
+
+.boginya-arrow {
+    background: #f3f4f6;
+    border: none;
+    color: #111827;
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.boginya-arrow:hover {
+    background: #e5e7eb;
+    transform: translateY(-1px);
+}
+
+.boginya-arrow span {
+    font-size: 18px;
+    line-height: 1;
+}
+
+.boginya-widget__empty {
+    background: #f9fafb;
+    border: 1px dashed #d1d5db;
+    padding: 16px;
+    border-radius: 12px;
+    text-align: center;
+    color: #4b5563;
+}
+
+@media (max-width: 767px) {
+    .boginya-featured-products {
+        gap: 8px;
+    }
+
+    .boginya-card {
+        padding: 12px;
+    }
+}
