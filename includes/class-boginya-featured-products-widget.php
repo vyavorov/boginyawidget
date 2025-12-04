@@ -260,7 +260,6 @@ class Boginya_Featured_Products_Widget extends Widget_Base {
             echo '<button class="boginya-arrow boginya-arrow--prev" type="button" aria-label="' . esc_attr__( 'Previous', 'boginya-featured-products' ) . '"><span>&larr;</span></button>';
         }
 
-        echo '<div class="boginya-slider-shell">';
         echo '<div class="boginya-slider">';
         echo '<div class="boginya-slider__track">';
 
@@ -297,8 +296,6 @@ class Boginya_Featured_Products_Widget extends Widget_Base {
         if ( ! empty( $data['showDots'] ) && 'true' === $data['showDots'] ) {
             echo '<div class="boginya-dots" aria-hidden="true"></div>';
         }
-
-        echo '</div>';
 
         if ( ! empty( $data['showArrows'] ) && 'true' === $data['showArrows'] ) {
             echo '<button class="boginya-arrow boginya-arrow--next" type="button" aria-label="' . esc_attr__( 'Next', 'boginya-featured-products' ) . '"><span>&rarr;</span></button>';
